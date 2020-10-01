@@ -18,7 +18,7 @@
         </TextView>
       </StackLayout>
 
-      <StackLayout class="secondContainer">
+      <StackLayout class="secondContainer mt-3">
         <StackLayout class="mt-1">
           <TextField
             :text="textFieldValue"
@@ -43,7 +43,7 @@
           />
         </StackLayout>
 
-        <StackLayout class="mt-1">
+        <StackLayout class="mt-3">
           <Button text="Continue " class="bigButton" tap="onTap"></Button>
         </StackLayout>
 
@@ -55,7 +55,7 @@
         <FlexboxLayout class="mt-2" alignItems="center" justifyContent="center">
           <Label text=" or Sign in with..." textWrap="true" class="smallText" />
         </FlexboxLayout>
-        <FlexboxLayout class="mt-1" alignItems="center" justifyContent="center">
+        <FlexboxLayout alignItems="center" justifyContent="center">
           <Button :text="'\uf09a'" class="fab socialBtn" />
           <Button :text="'\uf1a0'" class="fab socialBtn2" />
         </FlexboxLayout>
@@ -119,8 +119,11 @@ export default {
 .mt-2 {
   margin-top: 20;
 }
+.mt-3 {
+  margin-top: 30;
+}
 .mt-4 {
-  margin-top: 100;
+  margin-top: 120;
 }
 .flip {
   display: flex;
@@ -158,21 +161,21 @@ TextField {
   border-radius: 30;
 }
 .socialBtn {
-  font-size: 40;
-  width: 40;
-  height: 40;
+  font-size: 30;
+  width: 60;
+  height: 60;
   color: #1877f2;
-  border-radius: 20;
+  border-radius: 30;
   background-color: transparent;
 }
 .socialBtn2 {
-  font-size: 40;
-  width: 50;
-  height: 50;
+  font-size: 20;
+  width: 30;
+  height: 30;
   color: red;
-  border-radius: 25;
+  border-radius: 30;
   background-color: transparent;
-  left: -10;
+  margin-left: -30;
 }
 .row {
   display: flex;
